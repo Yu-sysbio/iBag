@@ -1,7 +1,9 @@
 %% Startme
 
-cd ../../../GitHub/cobratoolbox;
+cd ../cobratoolbox;
 initCobraToolbox;
 
-addpath(genpath('../../MATLAB/Code/iBag/')); %add to path
-cd ../../MATLAB/Code/iBag/;
+addpath(genpath('../RAVEN/')); %add to path
+
+addpath(genpath('../iBag/')); %add to path
+cd ../iBag;
