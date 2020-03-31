@@ -20,25 +20,23 @@ end
 model_data = getEnzymeCodesiBag(model);
 % kcats      = matchKcatsiBag(model_data,org_name);
 % cd GECKOfunction/;
-% save('kcats.mat','kcats');
+% save('kcats_iBag.mat','kcats');
 % cd ../;
 
 %Integrate enzymes in the model:
-ecModel                 = readKcatDataiBag(model_data,kcats);
-% [ecModel,modifications] = manualModifications(ecModel);
-% 
-% %Constrain model to batch conditions:
-% sigma    = 0.5;      %Optimized for glucose
-% Ptot     = 0.5;      %Assumed constant
-% gR_exp   = 0.41;     %[g/gDw h] Max batch gRate on minimal glucose media
-% c_source = 'D-glucose exchange (reversible)'; %Rxn name for the glucose uptake reaction
-% cd ../limit_proteins
-% [ecModel_batch,OptSigma] = getConstrainedModel(ecModel,c_source,sigma,Ptot,gR_exp,modifications,name);
-% disp(['Sigma factor (fitted for growth on glucose): ' num2str(OptSigma)])
+load('kcats_iBag.mat');
+ecModel = readKcatDataiBag(model_data,kcats);
+
+%Constrain model to batch conditions:
+sigma    = 0.5;
+Ptot     = 0.5;
+f        = 0.5;
+ecModel = constrainEnzymesiBag(ecModel,Ptot,sigma,f);
 
 %% Save output models:
+
+ecModel = saveECmodeliBag(ecModel,'eciBag597','1.0');
 cd ModelFiles/;
-ecModel = saveECmodel(ecModel,'COBRA','eciBag597','1.0');
 writeCbModel(ecModel,'xls','eciBag597.xls');
-writeCbModel(ecModel,'sbml','eciBag597.xml');
+save('eciBag597.mat','ecModel');
 cd ../;
