@@ -11451,11 +11451,11 @@
         </annotation>
         <listOfReactants>
           <speciesReference species="M_AMP__91__c__93__" stoichiometry="0.165" constant="true"/>
-          <speciesReference species="M_ATP__91__c__93__" stoichiometry="68.1" constant="true"/>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="71.94" constant="true"/>
           <speciesReference species="M_CMP__91__c__93__" stoichiometry="0.126" constant="true"/>
           <speciesReference species="M_GMP__91__c__93__" stoichiometry="0.2028" constant="true"/>
           <speciesReference species="M_Glycine__91__c__93__" stoichiometry="0.1279" constant="true"/>
-          <speciesReference species="M_H2O__91__c__93__" stoichiometry="68.1" constant="true"/>
+          <speciesReference species="M_H2O__91__c__93__" stoichiometry="71.94" constant="true"/>
           <speciesReference species="M_L_Alanine__91__c__93__" stoichiometry="0.1012" constant="true"/>
           <speciesReference species="M_L_Arginine__91__c__93__" stoichiometry="0.0563" constant="true"/>
           <speciesReference species="M_L_Asparagine__91__c__93__" stoichiometry="0.1767" constant="true"/>
@@ -11486,12 +11486,12 @@
           <speciesReference species="M_dTMP__91__c__93__" stoichiometry="0.0967" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="M_ADP__91__c__93__" stoichiometry="68.1" constant="true"/>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="71.94" constant="true"/>
           <speciesReference species="M_Biomass__91__c__93__" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_Phosphate__91__c__93__" stoichiometry="68.1" constant="true"/>
+          <speciesReference species="M_Phosphate__91__c__93__" stoichiometry="71.94" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction metaid="GAM" sboTerm="SBO:0000629" id="GAM" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB2N0">
+      <reaction metaid="GAM" sboTerm="SBO:0000629" id="GAM" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
         <annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#GAM">
@@ -19422,7 +19422,7 @@
           <fbc:geneProductRef fbc:geneProduct="G_Bcoa_3261"/>
         </fbc:geneProductAssociation>
       </reaction>
-      <reaction metaid="R0219" sboTerm="SBO:0000176" id="R0219" name="sn-Glycerol-3-phosphate:NAD+ 2-oxidoreductase" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB2N0">
+      <reaction metaid="R0219" sboTerm="SBO:0000176" id="R0219" name="sn-Glycerol-3-phosphate:NAD+ 2-oxidoreductase" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
         <annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#R0219">

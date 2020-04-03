@@ -1,4 +1,4 @@
-% Fig 3
+% Figure 3
 [a, b, ~] = xlsread('Fig3.xlsx');
 
 AA_name = b(2:22,1);

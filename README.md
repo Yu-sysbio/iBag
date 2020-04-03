@@ -4,9 +4,9 @@ iBag
 Introduction
 ------------
 
-This repository contains files for genome-scale model of _Bacillus coagulans_ 36D1.
+This repository contains files for genome-scale models of _Bacillus coagulans_ 36D1.
 
-* Last update: 2020-03-30
+* Last update: 2020-04-04
 
 
 Contributor
