@@ -43,8 +43,7 @@ ecModel = readKcatDataiBag(model_data,kcats);
 ecModel = constrainEnzymesiBag(ecModel,Ptot,sigma,f);
 
 %% Save output models:
-ecModel = saveECmodeliBag(ecModel,'eciBag597','1.0');
 cd ModelFiles/;
-writeCbModel(ecModel,'xls','eciBag597.xls');
+ecModel = saveECmodeliBag(ecModel,'eciBag597','1.0');
 save('eciBag597.mat','ecModel');
 cd ../;
